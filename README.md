@@ -54,10 +54,10 @@ npm install gateschema-transformer --save
 
 ## API  
 ### `transform(schema: GateSchema, options: TransformOptions, cb: TransformCallback)`  
-see [interface.ts](tree/master/src/interface.ts) for more details
+see [interface.ts](https://github.com/GateSchema/gateschema-transformer/blob/master/src/interface.ts) for more details
 
 ### `extend(options: { transformers?: KeywordTransformer[] })`  
-see [interface.ts](tree/master/src/interface.ts) for more details
+see [interface.ts](https://github.com/GateSchema/gateschema-transformer/blob/master/src/interface.ts) for more details
 
 ## License  
 MIT
