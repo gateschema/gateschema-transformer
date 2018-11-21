@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
     name: 'switch',
     transform: function (options, done) {
-        var state = options.state, node = options.node, constraint = options.constraint, validationOptions = options.validationOptions, pathValidationOptions = options.pathValidationOptions;
+        var state = options.state, node = options.node, constraint = options.constraint, validationOptions = options.validationOptions, pathValidationOptions = options.pathValidationOptions, transform = options.transform;
         var path = node.path, rootData = node.rootData, schema = node.schema, value = node.value;
         var schemaCtor = schema.constructor;
         var transformer = this;
@@ -23,7 +23,8 @@ exports.default = {
                     node: node,
                     state: state,
                     validationOptions: validationOptions,
-                    pathValidationOptions: pathValidationOptions
+                    pathValidationOptions: pathValidationOptions,
+                    transform: transform
                 }, done);
             }
             else {

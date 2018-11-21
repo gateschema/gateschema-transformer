@@ -7,7 +7,8 @@ export default {
       node,
       constraint,
       validationOptions,
-      pathValidationOptions
+      pathValidationOptions,
+      transform
     } = options;
     const { path, rootData, schema, value } = node;
     const schemaCtor = schema.constructor as I.GateSchemaBaseConstructor;
@@ -33,7 +34,8 @@ export default {
               node,
               state,
               validationOptions,
-              pathValidationOptions
+              pathValidationOptions,
+              transform
             },
             done
           );
